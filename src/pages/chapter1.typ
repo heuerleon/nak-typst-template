@@ -24,7 +24,7 @@ fn main() {
 #pagebreak()
 
 = Images
-The following will show how images look like in the document. This uses the default figure and image functions of Typist. Nothing special, you can configure stuff like height and caption.
+The following will show how images look like in the document. This uses the default figure and image functions of Typst. Nothing special, you can configure stuff like height and caption.
 
 #figure(
   image("../res/example_image.jpg", height: 9cm),
@@ -32,3 +32,5 @@ The following will show how images look like in the document. This uses the defa
 )
 
 #lorem(50)
+
+#pagebreak()

@@ -8,6 +8,11 @@
 #set text(size: 12pt)
 #set page(header: image("res/header.png"))
 #set page(margin: (y: 3cm, x: 2cm))
+#set par(
+  first-line-indent: 2em,
+  spacing: 1.5em,
+  justify: true,
+)
 
 // Cover
 #cover(
@@ -43,6 +48,7 @@
 
 // --- Include content here ---
 #include "pages/chapter1.typ"
+#include "pages/chapter2.typ"
 
 
 // Bibliography
