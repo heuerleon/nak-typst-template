@@ -58,7 +58,7 @@
 	counter(page).update(old_page_number + 1)
 }
 #set heading(numbering: none)
-#bibliography("literature.bib")
+#bibliography("res/literature.bib")
 #pagebreak()
 
 // Appendix
