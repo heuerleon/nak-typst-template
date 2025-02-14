@@ -15,7 +15,14 @@
 // Table of Contents
 #set page(numbering: "I")
 #counter(page).update(1)
-#outline()
+#show outline.entry.where(
+  level: 1
+): it => {
+  v(20pt, weak: true)
+  show repeat: none
+  strong(it)
+}
+#outline(indent: auto)
 #pagebreak()
 
 // List of Figures
@@ -39,10 +46,10 @@
 <end-of-roman-numbering>
 #set page(numbering: "1")
 #counter(page).update(1)
-#set heading(numbering: "1 ")
+#set heading(numbering: "1.1")
 
 
-// Include content here
+// --- Include content here ---
 #include "pages/chapter1.typ"
 
 
