@@ -49,10 +49,13 @@
 #set page(numbering: "I")
 #context {
 	let old_page_number = counter(page).at(<end-of-roman-numbering>).first()
-	counter(page).update(old_page_number)
+	counter(page).update(old_page_number + 1)
 }
-#set heading(numbering: "A ")
-#counter(heading).update(0)
+#set heading(numbering: none)
+#bibliography("literature.bib")
+#pagebreak()
 
 // Appendix
-= Appendix
+#set heading(numbering: "A.1 ")
+#counter(heading).update(0)
+#include "pages/appendix.typ"
