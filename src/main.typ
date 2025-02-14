@@ -1,12 +1,14 @@
 // Document config
 #set text(size: 12pt)
+#set page(header: image("res/header.png"))
+#set page(margin: (y: 3cm, x: 2cm))
 
 // Cover
 #import "pages/cover.typ": cover
 #cover(
   [1],
 	[12345],
-	[A wonderful and descriptive but not too long topic name],
+	[A wonderful and descriptive but not too long topic name, but at least it stretches over two lines],
 	[Angewandte Informatik, A22b],
 )
 
