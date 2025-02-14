@@ -1,22 +1,8 @@
+// Document config
+#set text(size: 12pt)
+
 // Cover
-Theory/Practice Transfer Paper\
-Nr. 4
-
-#let navy_cell(content) = table.cell(fill: blue.darken(60%), text(white, content))
-#let cover_table(matnr, topic, degree) = table(
-	columns: 2,
-	navy_cell([Matriculation number:]), matnr,
-	navy_cell([Accepted topic:]), topic,
-	navy_cell([Bachelor's programme, centuria:]), degree
-)
-
-#cover_table(
-	box[12489],
-	box[Comparing Fargate and EC2 for running ECS containers in AWS],
-	box[Angewandte Informatik, A22b],
-)
-
-#pagebreak()
+#include "pages/cover.typ"
 
 
 // Table of Contents
