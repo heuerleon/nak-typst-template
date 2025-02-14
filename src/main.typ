@@ -1,46 +1,38 @@
+// Imports
+#import "components/cover.typ": cover
+#import "components/outline.typ": toc, list_of, acronyms
+#import "@preview/acrotastic:0.1.1" as acro
+#import acro: acr
+
 // Document config
 #set text(size: 12pt)
 #set page(header: image("res/header.png"))
 #set page(margin: (y: 3cm, x: 2cm))
 
 // Cover
-#import "pages/cover.typ": cover
 #cover(
-  [1],
-	[12345],
-	[A wonderful and descriptive but not too long topic name, but at least it stretches over two lines],
-	[Angewandte Informatik, A22b],
+  "1",
+	"12345",
+	"A wonderful and descriptive but not too long topic name, but at least it stretches over two lines",
+	"Angewandte Informatik, A22b",
 )
 
 // Table of Contents
 #set page(numbering: "I")
 #counter(page).update(1)
-#show outline.entry.where(
-  level: 1
-): it => {
-  v(20pt, weak: true)
-  show repeat: none
-  strong(it)
-}
-#outline(indent: auto)
-#pagebreak()
+#toc()
 
 // List of Figures
-#outline(
-  title: [List of Figures],
-  target: figure.where(kind: image),
-)
-#pagebreak()
+#list_of("List of Figures", image)
+
+// List of Tables
+#list_of("List of Tables", table)
 
 // List of Acronyms
-#import "@preview/acrotastic:0.1.1" as acro
-#import acro: acr
-#acro.init-acronyms((
+#acronyms((
   "NAK": ("Nordakademie"),
   "TL": ("Transferleistung", "Transferleistungen")
 ))
-#acro.print-index()
-#pagebreak()
 
 // Main Section
 <end-of-roman-numbering>

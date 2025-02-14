@@ -1,3 +1,4 @@
+// Cover Component
 #import "../const.typ" as const
 
 #let linebreak_n(n) = {
