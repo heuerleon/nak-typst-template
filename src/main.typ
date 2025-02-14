@@ -25,13 +25,25 @@
 )
 #pagebreak()
 
+// List of Acronyms
+#import "@preview/acrotastic:0.1.1" as acro
+#import acro: acr
+#acro.init-acronyms((
+  "NAK": ("Nordakademie"),
+  "TL": ("Transferleistung", "Transferleistungen")
+))
+#acro.print-index()
+#pagebreak()
 
 // Main Section
 <end-of-roman-numbering>
 #set page(numbering: "1")
 #counter(page).update(1)
-This is just a test transfer paper
-#lorem(100)
+#set heading(numbering: "1 ")
+
+
+// Include content here
+#include "pages/chapter1.typ"
 
 
 // Bibliography
@@ -40,6 +52,8 @@ This is just a test transfer paper
 	let old_page_number = counter(page).at(<end-of-roman-numbering>).first()
 	counter(page).update(old_page_number)
 }
+#set heading(numbering: "A ")
+#counter(heading).update(0)
 
 // Appendix
 = Appendix
