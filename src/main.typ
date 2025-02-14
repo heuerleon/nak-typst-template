@@ -2,8 +2,13 @@
 #set text(size: 12pt)
 
 // Cover
-#include "pages/cover.typ"
-
+#import "pages/cover.typ": cover
+#cover(
+  [1],
+	[12345],
+	[A wonderful and descriptive but not too long topic name],
+	[Angewandte Informatik, A22b],
+)
 
 // Table of Contents
 #set page(numbering: "I")
@@ -16,11 +21,11 @@
   title: [List of Figures],
   target: figure.where(kind: image),
 )
-<end-of-roman-numbering>
 #pagebreak()
 
 
 // Main Section
+<end-of-roman-numbering>
 #set page(numbering: "1")
 #counter(page).update(1)
 This is just a test transfer paper
@@ -31,7 +36,7 @@ This is just a test transfer paper
 #set page(numbering: "I")
 #context {
 	let old_page_number = counter(page).at(<end-of-roman-numbering>).first()
-	counter(page).update(old_page_number + 1)
+	counter(page).update(old_page_number)
 }
 
 // Appendix
