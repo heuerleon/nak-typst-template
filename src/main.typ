@@ -1,8 +1,7 @@
 // Imports
 #import "components/cover.typ": cover
 #import "components/outline.typ": toc, list_of, acronyms
-#import "@preview/acrotastic:0.1.1" as acro
-#import acro: acr
+#import "@preview/acrostiche:0.5.1": *
 
 // Document config
 #set text(size: 12pt)

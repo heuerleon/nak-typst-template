@@ -1,5 +1,5 @@
 // Outline Component
-#import "@preview/acrotastic:0.1.1" as acro
+#import "@preview/acrostiche:0.5.1": *
 
 #let toc() = {
   show outline.entry.where(
@@ -26,11 +26,11 @@
 }
 
 #let acronyms(acronyms) = {
-  acro.init-acronyms(acronyms)
+  init-acronyms(acronyms)
   {
     show heading: none
     heading[List of Acronyms]
   }
-  acro.print-index(title: "List of Acronyms")
+  print-index(title: "List of Acronyms")
   pagebreak()
 }
