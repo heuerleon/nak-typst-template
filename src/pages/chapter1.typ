@@ -2,7 +2,7 @@
 == Citing
 #lorem(50) @nocera_software_2023
 
-#lorem(50) @nocera_software_2023 @moskala_android_2017
+#lorem(30) @nocera_software_2023 @moskala_android_2017
 
 == Code blocks
 

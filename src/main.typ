@@ -8,11 +8,7 @@
 #set text(size: 12pt)
 #set page(header: image("res/header.png"))
 #set page(margin: (y: 3cm, x: 2cm))
-#set par(
-  first-line-indent: 2em,
-  spacing: 1.5em,
-  justify: true,
-)
+#set par(spacing: 1.5em)
 
 // Cover
 #cover(
@@ -44,6 +40,7 @@
 #set page(numbering: "1")
 #counter(page).update(1)
 #set heading(numbering: "1.1")
+#set par(justify: true)
 
 
 // --- Include content here ---
