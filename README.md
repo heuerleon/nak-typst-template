@@ -1,5 +1,5 @@
 # 🎓 NAK Typst Template
-This is a template for Nordakademie transfer papers written in the markup-based typesetting system [Typst](https://github.com/typst/typst). Typst is an excellent alternative to LaTeX with a wide range of advantages such as faster compile times, a comprehensive scripting system similar to languages like JavaScript and user-friendly error messages.
+This is a template for Nordakademie transfer papers written in the markup-based typesetting system [Typst](https://github.com/typst/typst). Typst is an alternative to LaTeX with a range of advantages such as faster compile times, a comprehensive scripting system similar to languages like JavaScript and user-friendly error messages.
 
 The template is designed for English transfer papers, but can be modified for use with German. The format closely resembles the other official Nordakademie templates.
 
@@ -7,11 +7,11 @@ The template is designed for English transfer papers, but can be modified for us
 
 ## Setup
 
-1. Install Typst on your local machine as described in the official documentation
-2. Clone this repo: `git clone git@github.com:leonheuer/nak-typst-template.git`
+1. Install the Typst compiler on your local machine as described in the [Typst GitHub repo](https://github.com/typst/typst?tab=readme-ov-file#installation)
+2. Clone this template repo: `git clone git@github.com:leonheuer/nak-typst-template.git`
 3. `cd nak-typst-template`
-4. Watch source file: `typst watch src/main.typ`
-5. Open the `src/main.pdf` file to see the result PDF, which will be recompiled automatically on save
+4. Watch source file: `typst watch src/main.typ` -> Changes in the file will be automatically recompiled
+5. Open the `src/main.pdf` file to see the result PDF, which will be overwritten on change
 
 ## Writing your Transfer Paper
 
