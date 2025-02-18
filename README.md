@@ -13,6 +13,10 @@ The template is designed for English transfer papers, but can be modified for us
 4. Watch source file: `typst watch src/main.typ` -> Changes in the file will be automatically recompiled
 5. Open the `src/main.pdf` file to see the result PDF, which will be overwritten on change
 
+### Alternative: Create your own repo
+
+This is a GitHub template, which means you can create your Repo based on this repository without forking it. After creating your repo, clone it and proceed with the steps as described.
+
 ## Writing your Transfer Paper
 
 The core of this template is the `main.typ` file. Here you can:
