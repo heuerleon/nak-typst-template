@@ -1,9 +1,7 @@
 # 🎓 NAK Typst Template
-This is a template for Nordakademie transfer papers written in the markup-based typesetting system [Typst](https://github.com/typst/typst). Typst is an alternative to LaTeX with a range of advantages such as faster compile times, a comprehensive scripting system similar to languages like JavaScript and user-friendly error messages.
+This is a template for Nordakademie transfer papers written in the markup-like typesetting system [Typst](https://github.com/typst/typst). Typst is an alternative to LaTeX with a range of advantages such as faster compile times, a comprehensive scripting system similar to languages like JavaScript and user-friendly error messages.
 
-The template is designed for English transfer papers, but can be modified for use with German. The format closely resembles the other official Nordakademie templates.
-
-⭐️ _If you enjoy using this template, consider giving it a star on GitHub and share it with your classmates!_
+The template is designed for English transfer papers, but can be modified to write in German. The format closely resembles the other official Nordakademie templates.
 
 ## Setup
 
@@ -22,13 +20,19 @@ This is a GitHub template, which means you can create your Repo based on this re
 The core of this template is the `main.typ` file. Here you can:
 - Fill the data for the cover template
 - Add new abbreviations
-- Include content pages from the `pages` directory
+- Add formatting and page setup
+- Most importantly, add your content
 
-More complex components are extracted into modules in the `components` directory.
+Reusable code should be extracted into components inside the `components` directory. Define your components as functions that you call in the main file. This template comes with a few basic components:
+- Acronym: a modified version of the [Acrostiche](https://typst.app/universe/package/acrostiche/) extension. Mainly changes the output format to a more beautifully styled table.
+- Code: for importing code from a file and formatting it as a block with syntax highlighting
+- Cover: designed to resemble the original cover template for Nordakademie transfer papers
+- Outline: functions for printing outlines such as List of Tables, Table of Contents etc. that apply some basic formatting
+- Tables: some styled table functions that I developed while writing my own transfer papers
 
 Add any images, code source files or other kinds of resources that you want to include in your transfer paper, in the `res` directory.
 
-The bibliography file also lies in the `res` directory and uses the [BibTeX](https://www.bibtex.com/g/bibtex-format/) format. You might know it when coming from LaTeX, and you can use your current setup or copy your existing bibliography when switching from LaTeX.
+The bibliography file also lies in the `res` directory and uses the [BibTeX](https://www.bibtex.com/g/bibtex-format/) format. You might know it when coming from LaTeX, and you can use your current setup (e.g. export via Zotero) or copy your existing bibliography when switching from LaTeX.
 
 **Everything else can be done by using Typst built-in features. Additional formatting or tutorials can be found in the [Typst Docs](https://typst.app/docs/).**
 
