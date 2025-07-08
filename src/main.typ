@@ -12,7 +12,9 @@
 	header: image("res/header.png"),
 	margin: (y: globals.margin_y, x: globals.margin_x)
 )
-#set par(spacing: 1.5em)
+#set par(spacing: globals.paragraph_spacing)
+#show heading.where(level: 1): set block(above: globals.heading_margin_top, below: globals.heading_margin_bottom)
+#show heading.where(level: 2): set block(above: globals.heading_margin_top, below: globals.heading_margin_bottom)
 #show link: it => [
 	#underline(text(blue, it)) // styling for urls
 ]
