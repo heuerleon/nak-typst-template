@@ -3,9 +3,8 @@
 #import "components/outline.typ": *
 #import "components/code.typ": *
 #import "components/tables.typ": *
+#import "components/acronym.typ": acr
 #import "const.typ" as globals
-
-#import "@preview/acrostiche:0.5.1": *
 
 // Document config
 #set text(size: globals.font_size)

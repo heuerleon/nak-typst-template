@@ -1,6 +1,7 @@
-// Outline Component
-#import "@preview/acrostiche:0.5.1": *
+// Outline Components
+#import "acronym.typ": print-index, init-acronyms
 
+// Table of Contents
 #let toc() = {
   show outline.entry.where(
     level: 1
@@ -13,6 +14,7 @@
   pagebreak()
 }
 
+// List of x
 #let list_of(title, kind) = {
   {
     show heading: none
@@ -25,12 +27,9 @@
   pagebreak()
 }
 
+// List of Acronyms
 #let acronyms(acronyms) = {
   init-acronyms(acronyms)
-  {
-    show heading: none
-    heading[List of Acronyms]
-  }
-  print-index(title: "List of Acronyms")
+  print-index(title: "List of Acronyms", outlined: true, delimiter: none)
   pagebreak()
 }
