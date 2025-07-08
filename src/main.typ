@@ -10,11 +10,11 @@
 #set text(size: globals.font_size)
 #set page(
 	header: image("res/header.png"),
-	margin: (y: 3cm, x: 2cm)
+	margin: (y: globals.margin_y, x: globals.margin_x)
 )
 #set par(spacing: 1.5em)
 #show link: it => [
-	#underline(text(blue, it))
+	#underline(text(blue, it)) // styling for urls
 ]
 
 // Cover
