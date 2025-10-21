@@ -6,6 +6,7 @@
 #import "components/tables.typ": *
 #import "components/acronym.typ": acr
 #import "const.typ" as globals
+#import "@preview/zebraw:0.5.5": *
 
 // Document config
 #set text(
@@ -22,6 +23,7 @@
 #show link: it => [
 	#underline(text(blue, it)) // styling for urls
 ]
+#show: zebraw.with(..zebraw-themes.zebra) // Styling for advanced code blocks
 
 // Cover
 #cover_de(
@@ -235,8 +237,8 @@ Hier steht ein Text, der einige wichtige Dinge erklärt, aber ein Wort braucht e
 
 == Code snippet
 #figure(
-	code_listing("../res/rust_example.rs", "rust"),
-  	caption: [Dummy Rust code to show the code blocks]
+	codeblock("../res/rust_example.rs", "rust"),
+	caption: [Dummy Rust code to show the code blocks]
 ) <code-snippet>
 
 == Text

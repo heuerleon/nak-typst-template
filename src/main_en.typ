@@ -6,6 +6,7 @@
 #import "components/tables.typ": *
 #import "components/acronym.typ": acr
 #import "const.typ" as globals
+#import "@preview/zebraw:0.5.5": *
 
 // Document config
 #set text(size: globals.font_size)
@@ -19,6 +20,7 @@
 #show link: it => [
 	#underline(text(blue, it)) // styling for urls
 ]
+#show: zebraw.with(..zebraw-themes.zebra) // For making code listings work
 
 // Cover
 #cover_en(
@@ -233,8 +235,8 @@ Here is a text explaining some important stuff but there is something that needs
 
 == Code snippet
 #figure(
-	code_listing("../res/rust_example.rs", "rust"),
-  	caption: [Dummy Rust code to show the code blocks]
+	codeblock("../res/rust_example.rs", "rust"),
+	caption: [Dummy Rust code to show the code blocks]
 ) <code-snippet>
 
 == Text
