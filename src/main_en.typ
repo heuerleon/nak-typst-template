@@ -1,5 +1,6 @@
 // Imports
-#import "components/cover.typ": *
+#import "components/header.typ": header_en
+#import "components/cover.typ": cover_en
 #import "components/outline.typ": *
 #import "components/code.typ": *
 #import "components/tables.typ": *
@@ -9,7 +10,7 @@
 // Document config
 #set text(size: globals.font_size)
 #set page(
-	header: image("res/header.png"),
+	header: header_en,
 	margin: (y: globals.margin_y, x: globals.margin_x)
 )
 #set par(spacing: globals.paragraph_spacing)
@@ -20,7 +21,7 @@
 ]
 
 // Cover
-#cover(
+#cover_en(
   "1",
 	"12345",
 	"A wonderful and descriptive but not too long topic name, but at least it stretches over two lines",
@@ -30,7 +31,7 @@
 // Table of Contents
 #set page(numbering: "I")
 #counter(page).update(1)
-#toc()
+#toc("Table of Contents")
 
 // List of Figures
 #list_of("List of Figures", image)
@@ -42,7 +43,7 @@
 #list_of("List of Listings", raw)
 
 // List of Acronyms
-#acronyms((
+#acronyms("List of Acronyms", (
   "NAK": ("Nordakademie"),
   "TL": ("Transferleistung", "Transferleistungen")
 ))
@@ -211,7 +212,7 @@ Normal list.
 - Layout
 - ...
 
-Here is a text explaining some important stuff but there is something that needs a footnote, for example the word abcd#footnote([abcd stands for "absolutely brilliant cool design", see #link("https://otto.de")]). If we want to add a link inside the text, we #link("https://otto.de")[can do so].
+Here is a text explaining some important stuff but there is something that needs a footnote, for example the word abcd#footnote([abcd stands for "absolutely brilliant cool design", see #link("https://nordakademie.de")]). If we want to add a link inside the text, we #link("https://nordakademie.de")[can do so].
 
 
 // Bibliography

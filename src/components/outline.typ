@@ -2,7 +2,7 @@
 #import "acronym.typ": print-index, init-acronyms
 
 // Table of Contents
-#let toc() = {
+#let toc(title) = {
   show outline.entry.where(
     level: 1
   ): it => {
@@ -10,7 +10,10 @@
     show repeat: none
     strong(it)
   }
-  outline(indent: auto)
+  outline(
+    indent: auto,
+    title: title,
+  )
   pagebreak()
 }
 
@@ -28,8 +31,8 @@
 }
 
 // List of Acronyms
-#let acronyms(acronyms) = {
+#let acronyms(title, acronyms) = {
   init-acronyms(acronyms)
-  print-index(title: "List of Acronyms", outlined: true, delimiter: none)
+  print-index(title: title, outlined: true, delimiter: none)
   pagebreak()
 }
