@@ -3,6 +3,8 @@ This is a template for Nordakademie transfer papers written in the markup-like t
 
 There are separate files for English as well as German transfer papers. The format closely resembles the other official Nordakademie templates and has been used by myself for writing my transfer papers.
 
+You can find **example** files of how this template looks like in the [Releases](https://github.com/heuerleon/nak-typst-template/releases) of this repo.
+
 ## Setup
 
 There are several ways to use this template for your transfer paper.
