@@ -39,7 +39,12 @@ The core of this template is the `main_en.typ` file (`main_de.typ` if you're wri
 - Fill the data for the cover template
 - Add new abbreviations
 - Add formatting and page setup
-- Most importantly, add your content
+
+The main file is also where you will include your content files. These will be stored in the `chapters` directory. Make sure to always include the line
+```
+#import "../dependencies.typ": *
+```
+at the top of your chapters to be able to use all the components.
 
 Reusable code should be extracted into components inside the `components` directory. Define your components as functions that you call in the main file. This template comes with a few basic components:
 - **Acronym**: a modified version of the [Acrostiche](https://typst.app/universe/package/acrostiche/) extension. Mainly changes the output format to a more beautifully styled table.
