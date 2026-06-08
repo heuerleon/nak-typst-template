@@ -2,11 +2,11 @@
 #import "components/transfer_paper.typ": transfer_paper
 
 #show: transfer_paper.with(
-	language: "en",
+	language: "de",
   "1",
-	"12345",
-	"Ein wundervoller und deskriptiver, aber nicht zu langer Titel, aber immerhin füllt er zwei Zeilen",
-	"Angewandte Informatik, A22b",
+	"14867",
+	"Warum gelingt es Unternehmen häufig nicht, agile Arbeitsweisen konsequent durchzusetzen, und welche Lösungsansätze können diese Umsetzung verbessern?",
+	"Wirtschaftsinformatik, I25a",
 	appendix_content: include "chapters/99_appendix.typ",
 )
 

@@ -1,21 +1,12 @@
 #import "../components/tables.typ": table_style_1, table_style_2, table_style_3, table_style_3_bottom_cell
 
-= Figures
+= Theoretische Grundlagen
 
-== Images
+== Agilität – Begriff und Kernprinzipien (Agiles Manifest)
+#lorem(100)
 
-The following will show how images look like in the document. This uses the default figure and image functions of Typst. Nothing special, you can configure stuff like height and caption.
-
-#figure(
-  image("../res/example_image.jpg", height: 9cm),
-  caption: "Interesting image of Korea because I love Korea and I want to showcase images",
-) <korea-image>
-
-As @korea-image shows, Korea is a beautiful country. Please study Korean and go there to live and study. #lorem(50)
-
-#lorem(150)
-
-== Tables
+== Relevante Frameworks: Scrum, SAFe
+#lorem(100)
 
 #figure(
 	table(
