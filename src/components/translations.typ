@@ -6,6 +6,14 @@
   abbreviations: "Abbreviations",
   references: "References",
   appendix: "Appendix",
+  ai_section_title: "AI Process Documentation",
+  ai_section_subtitle: "For the Use of Artificial Intelligence (AI) in Examinations, Transfer Papers and Academic Work",
+  ai_col_query: "Query to the following AI* (including date)",
+  ai_col_reason: "Reason for using the AI",
+  ai_col_quality: "Assessment of the quality of the AI output",
+  ai_col_software: "Software used and version number",
+  ai_footnote: "*Please formulate your query and name the AI used",
+  ai_attribution: "According to Dr. Ulrike Hanke Higher Education Didactic Training · Hanke Teachertraining (hanke-teachertraining.de)",
 )
 
 #let german_heading_texts = (
@@ -16,4 +24,12 @@
   abbreviations: "Abkürzungen",
   references: "Bibliographie",
   appendix: "Anhang",
+  ai_section_title: "KI-Prozessdokumentation",
+  ai_section_subtitle: "Für die Nutzung von Künstlicher Intelligenz (KI) in Prüfungs-, Transfer- und Studienleistungen",
+  ai_col_query: "Anfrage an folgende KI* (inkl. Abrufdatum)",
+  ai_col_reason: "Grund für die Verwendung der KI",
+  ai_col_quality: "Bewertung der Qualität des KI-Outputs",
+  ai_col_software: "Verwendete Software und Versionsnummer",
+  ai_footnote: "*Bitte formulieren Sie Ihre Anfrage und nennen Sie die verwendete KI",
+  ai_attribution: "Nach Dr. Ulrike Hanke Hochschuldidaktische Weiterbildungen · Hanke Teachertraining (hanke-teachertraining.de)",
 )
