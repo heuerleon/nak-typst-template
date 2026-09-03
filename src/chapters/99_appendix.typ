@@ -1,4 +1,5 @@
 #import "../components/code.typ": codeblock
+#import "../components/ai_table.typ": ai_documentation
 
 == Code snippet
   #figure(
@@ -8,3 +9,5 @@
 
   == Text
   #lorem(50)
+
+#ai_documentation()

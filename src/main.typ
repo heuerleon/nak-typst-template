@@ -1,8 +1,9 @@
 // Imports
 #import "components/transfer_paper.typ": transfer_paper
 
+// Language is globally defined in `transfer_paper.typ`. Defaults to English
+
 #show: transfer_paper.with(
-	language: "en",
   "1",
 	"12345",
 	"Ein wundervoller und deskriptiver, aber nicht zu langer Titel, aber immerhin füllt er zwei Zeilen",
