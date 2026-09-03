@@ -1,6 +1,8 @@
 #import "components/transfer_paper.typ": transfer_paper
+#import "const.typ": language
 
 #show: transfer_paper.with(
+	language: language,
   "1",
 	"12345",
 	"Ein wundervoller und deskriptiver, aber nicht zu langer Titel, aber immerhin füllt er zwei Zeilen",

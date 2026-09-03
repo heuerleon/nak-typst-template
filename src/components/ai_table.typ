@@ -1,5 +1,5 @@
 #import "translations.typ": english_heading_texts, german_heading_texts
-#import "../const.typ": nordakademie_blue
+#import "../const.typ": nordakademie_blue, language
 
 #let blue_header_cell(content) = table.cell(
   align: left,
@@ -82,12 +82,12 @@
   )
 }
 
-#let ai_documentation(entries: (), lang: "en") = {
+#let ai_documentation(entries: ()) = {
   for (i, entry) in entries.enumerate() {
     validate_entry(entry, i)
   }
 
-  let heading_texts = if lang == "de" {
+  let heading_texts = if language == "de" {
     german_heading_texts
   } else {
     english_heading_texts
