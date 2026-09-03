@@ -1,11 +1,9 @@
 # 🎓 NAK Typst Template
-This is a template for Nordakademie transfer papers written in the markup-like typesetting system [Typst](https://github.com/typst/typst).
+Officially approved template for Nordakademie transfer papers written in the markup-like typesetting system [Typst](https://github.com/typst/typst).
 
 The template supports both **English** and **German**.
 
-The format closely resembles the other official Nordakademie templates.
-
-You can find **examples** files of how this template looks like in the [Releases](https://github.com/heuerleon/nak-typst-template/releases) of this repo.
+You can find **example** files of how this template looks like in the [Releases](https://github.com/heuerleon/nak-typst-template/releases) of this repo.
 
 ## Setup
 
@@ -13,21 +11,18 @@ There are several ways to use this template for your transfer paper.
 
 ### Option A (manually clone the repo)
 
-1. Install the Typst compiler on your local machine as described in the [Typst GitHub repo](https://github.com/typst/typst?tab=readme-ov-file#installation). It  is recommended to use VSCode and installing the [Tinymist extension](https://github.com/Myriad-Dreamin/tinymist).
-2. Clone this template repo: `git clone git@github.com:leonheuer/nak-typst-template.git`
-3. `cd nak-typst-template`
-4. Press F1 > Preview Opened File while in the `main.typ` file to ensure the preview works correctly.
-5. Compile the file: `typst c main.typ`
+1. Install the Typst compiler on your local machine as described in the [Typst GitHub repo](https://github.com/typst/typst?tab=readme-ov-file#installation).
+2. Highly recommended: Use VSCode and install the [Tinymist extension](https://github.com/Myriad-Dreamin/tinymist).
+3. Use this repo as GitHub template directly to create your own repo OR clone this template repo: `git clone git@github.com:leonheuer/nak-typst-template.git`
+4. `cd nak-typst-template`
+5. Press F1 > Preview Opened File while in the `main.typ` file to ensure the preview works and all references are resolved correctly.
+6. Compile the file: `typst c main.typ`
 
 You can commit your changes by creating your own upstream repo (e.g. GitHub) and changing the remote of your local repo to point to your own upstream repo.
 
-### Option B (create your own repo directly)
+### Option B (use the Typst online editor)
 
-This is a GitHub template, which means you can create your Repo based on this repository without forking it. After creating your repo, clone it and proceed with the steps as described.
-
-### Option C (use the Typst online editor)
-
-This option has the advantage that you don't need to setup your local IDE and dev environment.
+Requires no setup of your local IDE and dev environment.
 
 1. Click on the green button "Code" in the top of this repo, and select the option "Download ZIP".
 2. Unpack the zip file
@@ -41,10 +36,14 @@ The core of this template is the `main.typ` file. Here you can:
 - Fill your data like title and centuria
 - Include your chapters
 
+Define your language in `const.typ`.
+
 There are some customized components in the `components` directory:
 - **Code**: for importing code from a file and formatting it as a block with syntax highlighting
 - **Tables**: some styled table functions that I developed while writing my own transfer papers
 - **Text formatting**
+
+AI documentation (compliant with NAK standards) is available through the ai_documentation component as shown in the `chapters/99_appendix.typ` example file.
 
 Add any images, code source files or other kinds of resources that you want to include in your transfer paper, in the `res` directory.
 
