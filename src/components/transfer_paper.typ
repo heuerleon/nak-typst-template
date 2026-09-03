@@ -5,10 +5,8 @@
 #import "../dependencies.typ": zebraw, zebraw-themes, make-glossary, print-glossary, register-glossary
 #import "../abbreviations.typ": abbreviation_list
 
-#let document_language = "en"
-
 #let transfer_paper(
-  language: document_language,
+  language: "en",
   font_size: 12pt,
   margin_y: 3cm,
   margin_x: 2cm,
@@ -128,5 +126,4 @@
     heading(heading_texts.appendix)
     appendix_content
   }
-  
 }

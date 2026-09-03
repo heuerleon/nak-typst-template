@@ -1,7 +1,4 @@
-// Imports
 #import "components/transfer_paper.typ": transfer_paper
-
-// Language is globally defined in `transfer_paper.typ`. Defaults to English
 
 #show: transfer_paper.with(
   "1",

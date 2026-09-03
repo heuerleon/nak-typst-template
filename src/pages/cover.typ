@@ -1,5 +1,4 @@
-// Cover Component
-#let dark_blue = color.rgb(8, 31, 92)
+#import "../const.typ": nordakademie_blue
 
 #let linebreak_n(n) = {
 	let i = 0;
@@ -10,10 +9,11 @@
 }
 
 #let blue_cell(content) = table.cell(
-	fill: dark_blue,
+	fill: nordakademie_blue,
 	text(weight: "bold", fill: white, content),
 )
 
+// Cover Component
 #let cover(language, nr, matnr, topic, degree) = {
 	let texts
 	if language == "en" {
@@ -33,9 +33,9 @@
 	} else {
 		return "Language must be English (\"en\") or German (\"de\")"
 	}
-	set text(font: "PT Sans")
+	set text(font: "Liberation Sans", fallback: true)
 
-	text(weight: "bold", fill: dark_blue, size: 15pt)[#texts.header #nr]
+	text(weight: "bold", fill: nordakademie_blue, size: 15pt)[#texts.header #nr]
 	linebreak_n(2)
 	table(
 		columns: (1fr, 2fr),

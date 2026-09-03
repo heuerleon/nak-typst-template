@@ -1,0 +1,1 @@
+#let nordakademie_blue = rgb(8, 31, 92)
