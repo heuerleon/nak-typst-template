@@ -51,6 +51,16 @@ The bibliography file also lies in the `res` directory and uses the [BibTeX](htt
 
 Abbreviations can be added in the `abbreviations.typ` file.
 
+## Forms (German only): Auftragsklärung and Selbstreflexion
+
+The two forms that NAK requires besides the transfer paper (see the Moodle course "Transferleistungen", section "Dokumente zur Abgabe") are available as Typst recreations in `components/forms.typ`. Layout, colors and standard texts follow the Moodle PDFs (Auftragsklärung `2024_08 BWING24`, Selbstreflexion `2022_07`); they are meant to be filled with your own text and uploaded as **separate PDFs** (not part of the transfer paper).
+
+- `auftragsklaerung.typ` and `selbstreflexion.typ` in `src` are ready-to-fill examples. Compile with `typst c auftragsklaerung.typ` (inside `src`).
+- Only the arguments of `auftragsklaerung(...)` / `selbstreflexion(...)` need to be filled.
+- Fonts: the forms use Calibri. If it is not installed, the metric-compatible Carlito is used as fallback (Typst prints a font warning, that is fine).
+- Not included: the newer Selbstreflexion for Wirtschaftsingenieurwesen (2025_10), the English forms, the Eigenständigkeitserklärung. Please always check the Moodle course for the current versions.
+- The texts, logos and layout of the forms belong to NORDAKADEMIE. Size guidelines (Merkblatt): about 2000 characters each; the Selbstreflexion form counts without spaces.
+
 ## Contributing
 
 If you have suggestions or issues, you are invited to open an **Issue** on GitHub. I appreciate contributions via **Pull Request**.
